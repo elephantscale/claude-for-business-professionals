@@ -24,6 +24,9 @@ All in `course-materials/`:
 
 ## The dataset's built-in lessons (instructor cheat sheet)
 
+> For the **exact verified numbers** (port/grade growth, the outlier value, the blank rows, model
+> findings), see **`ANSWER-KEY.md`** — instructor-only; use it to validate students' analysis live.
+
 The data is realistic on purpose — the "wrong" bits are teaching devices:
 
 - **Namibe is the only declining port** (~−13% year over year) while the others grow — the
