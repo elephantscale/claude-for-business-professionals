@@ -41,11 +41,11 @@ show they can differ. "Calculated, not estimated" becomes the refrain.
 
 ## What You Can Ask, With No Formulas
 
-* *"What's the overall revenue trend over these 24 months?"*
-* *"Which region is growing and which is declining?"*
-* *"Which category grows fastest? Any seasonality?"*
-* *"Compare this year to last year by region."*
-* *"Make a chart of monthly revenue by region."*
+* *"What's the overall value trend over these 24 months?"*
+* *"Which port is growing and which is declining?"*
+* *"Which grade grows fastest? Any seasonality?"*
+* *"Compare this year to last year by port."*
+* *"Make a chart of monthly value by port."*
 
 Notes:
 
@@ -58,8 +58,8 @@ no functions. The skill is knowing *what* to ask, not *how* to write it.
 
 Real data is messy. You fix it by **describing the mess**, not editing cells:
 
-* *"The Region column is inconsistent — 'East', 'east', 'EAST', 'E'. Standardize it."*
-* *"Some Revenue cells are blank. List which rows, and don't invent values."*
+* *"The Port column is inconsistent — 'Namibe', 'namibe', 'NAMIBE', 'NMB'. Standardize it."*
+* *"Some Value cells are blank. List which rows, and don't invent values."*
 * *"Split this full-name column into first and last."*
 
 Notes:
@@ -80,8 +80,8 @@ The numbers *feel* like data. They will end up on a slide. **Check the ones that
 
 Notes:
 
-The Session-2 dataset has a planted 10x error (June 2025, West, Equipment). Do not tell them
-where — let them find it in the lab. The person who misses it because Claude "seemed
+The Session-2 dataset has a planted 10x error (2025-06, Luanda, Brown — ~$655K vs a ~$66K
+norm). Do not tell them where — let them find it in the lab. The person who misses it because Claude "seemed
 confident" is the teaching moment: confidence is not accuracy.
 
 ---
@@ -106,8 +106,8 @@ first, then chart — a chart on dirty data is a confident lie.
 
 A total is not a finding. A **finding** is the sentence you'd say to your boss:
 
-> Not: *"East did $1.1M."*
-> But: *"East revenue has declined for six straight quarters while every other region grew —
+> Not: *"Namibe imported about $0.9M."*
+> But: *"Namibe's import value has declined year over year while every other port grew —
 > we need an owner on it before the board deck."*
 
 Notes:

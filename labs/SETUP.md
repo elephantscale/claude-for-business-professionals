@@ -6,8 +6,8 @@ one rule that matters most: what data is safe to put into Claude.
 ## What you need
 
 - A browser and a **Claude.ai** account (see below).
-- The course dataset: `course-materials/sample-data/cascade-sales.csv`. The instructor will
-  share it — download it before Session 2.
+- The course dataset: `course-materials/sample-data/angola-sugar-imports.csv`. The instructor
+  will share it — download it before Session 2.
 - Nothing else. No installation, no code, no spreadsheet software required (though having
   Excel or Google Sheets open to eyeball the data helps in Session 2).
 
@@ -29,12 +29,31 @@ The whole course runs on four Claude.ai features:
 |---|---|
 | **Claude Team ("for Work")** | **Recommended.** Projects for everyone, data kept out of training, central admin/seat provisioning — the right fit for a company room. |
 | **Claude Pro (individual)** | Fine fallback. Identical lab experience; just not centrally managed. |
-| **Claude Free** | Not recommended for the labs — Project and usage limits get in the way. |
+| **Claude Free** | Works with a **fallback path** — no Projects and a tighter Analysis tool / upload limit, so it's rougher, but the labs still teach. See "If you're on Free" below. |
 | **API key / Console Workbench** | **Not used in this course.** It has no Projects, no Artifacts, and no Analysis tool — it's a developer surface, and it would gut the labs. |
 
 > **Instructor note:** the API-key path was considered and rejected for exactly the reasons
 > above. If your organization can *only* provide API keys, raise it before delivery — the
 > labs would have to be redesigned and would lose their best features.
+
+### If you're on Free — the fallback path
+
+You can still do every lab; two features degrade, and here's how to work around each:
+
+- **No Projects.** Instead of a Project, do the whole course in **one long chat** and keep it
+  open across all four sessions. In your very first message, paste the project instructions
+  from Lab 1 Step 1, then upload the CSV in that same chat. Claude carries context within a
+  single conversation — it's just less tidy than a Project. (The dataset itself is tiny —
+  ~15 KB — so uploading it is never the problem.)
+- **Lower usage caps.** Free has a smaller message allowance, so you may hit a limit partway
+  through a session. Be economical — fewer, fuller prompts — and if you run out, follow the
+  instructor's screen for the rest of that step. Still ask Claude to "use the analysis tool"
+  every time numbers matter, so they stay calculated, not estimated (this works on Free too,
+  just with the same usage cap).
+
+> **If you have nothing at all:** follow along on the instructor's screen and try what you can
+> on a Free account you create in the first five minutes. You'll still walk out with the
+> prompt library, which is the part that matters most.
 
 ## The one rule: what data is safe to put in
 
@@ -56,19 +75,19 @@ Session 1 covers this properly. For now: **everything you paste in the labs come
 course pack. Nothing from your own organization until you're back at your desk and following
 your own policy.**
 
-## The dataset — Cascade Outdoor Supply
+## The dataset — Kwanza Sugar Imports
 
-`cascade-sales.csv` is 24 months (2024–2025) of sales for a fictional outdoor-goods
-distributor, by **Region** (West, Central, East, South) and **Category** (Apparel, Footwear,
-Equipment, Accessories):
+`angola-sugar-imports.csv` is 24 months (2024–2025) of cane-sugar imports for a fictional
+importer and distributor in Angola, by **Port** of entry (Luanda, Lobito, Namibe, Cabinda)
+and **Grade** (Raw, Refined, Brown, Specialty):
 
 | Column | What it is |
 |---|---|
 | Month | Reporting month, `YYYY-MM` |
-| Region | Sales region |
-| Category | Product category |
-| Units | Units sold |
-| Revenue | Revenue in dollars |
+| Port | Port of entry |
+| Grade | Sugar grade |
+| Tonnes | Metric tons imported |
+| Value | Import value in US dollars |
 
 It is deliberately **realistic, not clean** — there are a few things wrong with it on
 purpose, because catching those is part of the skill. You'll meet them in Lab 2.

@@ -11,8 +11,8 @@ a draft presentation, entirely inside **Claude.ai**. Built by Elephant Scale.
 - **`slides/`** — five decks (`00-about` + one per session). Build with `gen.sh`
   (`$ES_HOME/utils/presentations/slides-assembler.sh`); output lands in `slides/assembly.out/`.
 - **`labs/`** — `SETUP.md`, a lab per session, and a facilitator index (`README.md`).
-- **`course-materials/`** — the shared dataset (`sample-data/cascade-sales.csv`) and the
-  prompt-library handout.
+- **`course-materials/`** — the shared dataset (`sample-data/angola-sugar-imports.csv`), the
+  prompt-library handout, and the student intro form (`cohort-intros.html`).
 
 ## Format
 

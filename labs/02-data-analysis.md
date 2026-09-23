@@ -15,10 +15,10 @@ The dataset has problems in it on purpose. Finding them is the point.
 
 ## Before you start
 
-- Work in your **"Cascade — My Workspace"** Project. The CSV is already uploaded from Lab 1.
-  (If not: upload `course-materials/sample-data/cascade-sales.csv` now.)
+- Work in your **"Kwanza — My Workspace"** Project. The CSV is already uploaded from Lab 1.
+  (If not: upload `course-materials/sample-data/angola-sugar-imports.csv` now.)
 - Have the file open in Excel or Google Sheets too, so you can eyeball it — 384 rows, five
-  columns (Month, Region, Category, Units, Revenue).
+  columns (Month, Port, Grade, Tonnes, Value). Value is in US dollars; Tonnes is metric tons.
 
 ## Step 1 — Ask it what's there (5 min)
 
@@ -26,10 +26,10 @@ Don't start with a question you already know the answer to. Start by making Clau
 you. In a new chat in your Project:
 
 > ```
-> Using the uploaded cascade-sales.csv, give me a quick orientation:
-> what date range, which regions and categories, total revenue, and anything
-> that looks off or inconsistent in the data. Use the analysis tool so the
-> numbers are calculated, not estimated.
+> Using the uploaded angola-sugar-imports.csv, give me a quick orientation:
+> what date range, which ports and grades, total value and total tonnes, and
+> anything that looks off or inconsistent in the data. Use the analysis tool so
+> the numbers are calculated, not estimated.
 > ```
 
 **Watch for the phrase "analysis tool" or a code step.** When Claude *runs code* on the file,
@@ -41,9 +41,9 @@ when numbers matter — which is now.
 Claude's orientation probably flagged some of this; if not, you will. Ask:
 
 > ```
-> Two things look wrong to me. First, the Region column isn't consistent — some rows
-> say "East", others "east", "EAST", or "E". Standardize them to one label. Second,
-> a few Revenue cells are blank. List exactly which Month/Region/Category rows are
+> Two things look wrong to me. First, the Port column isn't consistent — some rows
+> say "Namibe", others "namibe", "NAMIBE", or "NMB". Standardize them to one label.
+> Second, a few Value cells are blank. List exactly which Month/Port/Grade rows are
 > blank, and tell me how you'd handle them for a trend analysis (don't silently
 > invent values).
 > ```
@@ -58,16 +58,16 @@ Now the analysis. Ask for the story, not just tables:
 
 > ```
 > Using the cleaned data and the analysis tool:
-> 1. Overall revenue trend across the 24 months — up, down, flat, seasonal?
-> 2. Which region is growing and which is declining? Show each region's trend.
-> 3. Which category is growing fastest?
+> 1. Overall value trend across the 24 months — up, down, flat, seasonal?
+> 2. Which port is growing and which is declining? Show each port's trend.
+> 3. Which grade is growing fastest?
 > 4. Any seasonality — months that spike?
-> Give me a short written takeaway for each, plus one chart of monthly revenue by region.
+> Give me a short written takeaway for each, plus one chart of monthly value by port.
 > ```
 
-You should see the real story emerge: **East declining while the others grow, Accessories
-growing fastest, footwear spiking in the autumn.** If your takeaways don't say something like
-that, push back — ask Claude to show its working.
+You should see the real story emerge: **Namibe declining while the others grow, Specialty
+growing fastest, and Refined spiking in the autumn (Sep–Nov, ahead of the holidays).** If your
+takeaways don't say something like that, push back — ask Claude to show its working.
 
 ## Step 4 — Catch the wrong number (5 min)
 
@@ -79,16 +79,18 @@ This is the most important five minutes of the course. Ask:
 > looks wrong.
 > ```
 
-There is a planted error: **June 2025, West, Equipment** has a revenue roughly **ten times**
-what that cell should be. Confirm it yourself in the spreadsheet — the surrounding Equipment
-values are tens of thousands; this one is hundreds of thousands.
+There is a planted error: **June 2025, Luanda, Brown** has a value roughly **ten times**
+what that cell should be. Confirm it yourself in the spreadsheet — the surrounding Brown
+values are tens of thousands of dollars; this one is over half a million.
 
-> Then ask: *"Re-run the totals and the West trend with that row corrected to a plausible
+> Then ask: *"Re-run the totals and the Luanda trend with that row corrected to a plausible
 > value, and tell me how much it changed the answer."*
 
-**The lesson:** that one bad cell was quietly inflating West and the company total. Nobody
-downstream would have known. You caught it because you asked — and because you didn't trust
-the first tidy number you were handed.
+**The lesson:** that one bad cell was quietly inflating Luanda and the company total —
+dramatically. Uncorrected, Luanda looks like the star, growing ~20% year over year; corrected,
+its growth is basically flat, and Lobito and Cabinda are the real movers. The *whole* headline
+about Luanda came from one typo. Nobody downstream would have known. You caught it because you
+asked — and because you didn't trust the first tidy number you were handed.
 
 ## Step 5 — Lock in three findings (3 min)
 
@@ -116,6 +118,6 @@ catch. Keep them in the Project; Session 3 turns them into a report.
 
 ## If you finish early
 
-Ask: *"If I could give East one intervention next quarter, what does the data suggest and
+Ask: *"If I could give Namibe one intervention next quarter, what does the data suggest and
 what's the risk in that recommendation?"* Notice Claude will now reason **beyond** the data —
 a good moment to practice separating what the numbers say from what the AI is inferring.

@@ -73,7 +73,7 @@ say them back.
 
 **Engineered:** *"You're helping me prep for the board. Turn this note into a status summary:
 a one-line headline, then Working / Watching / Action needed as three short lists, under 120
-words. Example tone: 'East: soft for several quarters, cause unknown — needs an owner.'"*
+words. Example tone: 'Namibe: import volumes soft for several quarters, cause unknown — needs an owner.'"*
 
 Same model. Same text. Completely different result. **The difference is free.**
 
@@ -152,7 +152,7 @@ developer tool; this is a business tool.
 
 ## Lab 1 — Your First Working Prompts
 
-* Set up your **"Cascade — My Workspace"** Project and upload the dataset
+* Set up your **"Kwanza — My Workspace"** Project and upload the dataset
 * Take a rambling business note from naive prompt → engineered prompt
 * Run the data-safety judgment drill
 

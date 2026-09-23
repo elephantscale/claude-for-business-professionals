@@ -103,7 +103,7 @@ See `labs/SETUP.md` for the exact setup and the data-safety rules.
 - Cleaning and reshaping messy data by describing what you want
 - Charts and tables — and the discipline of **sanity-checking Claude's numbers**
 - The Analysis tool: when Claude *calculates* vs. when it *estimates*, and why it matters
-- **Lab 2:** take the Cascade Outdoor Supply sales data from raw file to three findings you
+- **Lab 2:** take the Kwanza Sugar Imports data from raw file to three findings you
   would put in front of your boss — including the one number that's wrong
 
 > The habit this session installs: *the numbers feel like data — check the two that matter
@@ -140,8 +140,8 @@ See `labs/SETUP.md` for the exact setup and the data-safety rules.
 # Labs
 
 The four labs are the spine of the course. Every participant works on the **same shared
-dataset** — Cascade Outdoor Supply, a fictional outdoor-goods distributor — so the analysis,
-report, and deck build on each other and nobody gets stuck sourcing material.
+dataset** — Kwanza Sugar Imports, a fictional cane-sugar importer and distributor in Angola —
+so the analysis, report, and deck build on each other and nobody gets stuck sourcing material.
 
 | # | Lab | Session | Output |
 |---|---|---|---|

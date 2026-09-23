@@ -52,8 +52,8 @@ I'm talking to colleagues"* — and re-run. You're tuning voice, which only you 
 Presentations get changed at the last minute. Practice it:
 
 > - *"The leadership team is short on time — cut this to 4 slides and merge the two
->   region slides."*
-> - *"Reframe the East slide from a problem into a decision we need them to make."*
+>   port slides."*
+> - *"Reframe the Namibe slide from a problem into a decision we need them to make."*
 > - *"Give me a stronger closing slide — one clear ask, not a summary."*
 
 This is the real workflow: draft fast, then reshape on demand. The speed is the point.

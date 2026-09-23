@@ -22,7 +22,7 @@ The discipline being trained: **the words can be Claude's; the claims have to be
 ## Step 1 — The executive summary (7 min)
 
 > ```
-> Write a one-page executive summary of the Cascade sales analysis for our VP of Sales.
+> Write a one-page executive summary of the Kwanza sugar-imports analysis for our VP of Operations.
 > Structure:
 > - A one-sentence headline (the single most important thing)
 > - "What's working" and "What needs attention" as short sections
@@ -66,9 +66,9 @@ defend and one that blows up in the meeting.
 Same facts, different reader — this is where the leverage is:
 
 > ```
-> Now rewrite this same summary for the four regional sales managers instead of the VP.
-> They care about their own region, not the company total, and they'll be defensive
-> about East. Keep it factual, make it useful to them rather than a scorecard, and keep
+> Now rewrite this same summary for the four port managers instead of the VP.
+> They care about their own port, not the company total, and they'll be defensive
+> about Namibe. Keep it factual, make it useful to them rather than a scorecard, and keep
 > it under 250 words.
 > ```
 

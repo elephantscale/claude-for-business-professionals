@@ -42,7 +42,7 @@ Same discipline three times: get the skeleton right before the surface.
 The same facts become three different documents depending on the reader:
 
 * **The CFO** — numbers, risk, the decision. Terse.
-* **The regional managers** — what it means for *them*, not a scorecard.
+* **The port managers** — what it means for *them*, not a scorecard.
 * **The all-hands** — plain, reassuring, no jargon.
 
 You don't rewrite. You say who it's for, and re-run.

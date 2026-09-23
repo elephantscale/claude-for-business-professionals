@@ -27,7 +27,7 @@ Don't ask for "slides." Ask for an **outline**:
 > One slide per key message · 5–6 slides · each with a **takeaway title** (not a topic) and
 > 3 tight bullets · start with the headline, end with the ask.
 
-A "topic" title is *"East Region."* A **takeaway** title is *"East needs a decision now."*
+A "topic" title is *"Namibe."* A **takeaway** title is *"Namibe needs a decision now."*
 
 Notes:
 
@@ -56,8 +56,8 @@ what the eye misses. This is where "sounds like you" is won or lost.
 
 Decks change at the last minute. That's a feature here, not a problem:
 
-* *"Cut to 4 slides, merge the two region slides."*
-* *"Reframe the East slide from a problem into a decision."*
+* *"Cut to 4 slides, merge the two port slides."*
+* *"Reframe the Namibe slide from a problem into a decision."*
 * *"Stronger close — one clear ask, not a summary."*
 
 Draft fast, reshape on demand. **The speed is the point.**

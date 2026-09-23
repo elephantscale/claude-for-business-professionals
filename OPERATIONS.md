@@ -2,7 +2,9 @@
 
 **Last updated:** 2026-09-23
 **Owner:** Mark Kerzner (instructor)
-**Status:** Green — course written and building; first delivery Thursday 2026-09-24
+**Status:** Yellow — course fully built and re-skinned to the client domain; first delivery
+Thursday 2026-09-24. Yellow (not Green) only because participant Claude account provisioning is
+unconfirmed the day before.
 
 ## Purpose and business value
 
@@ -14,35 +16,59 @@ ChatGPT/Azure-oriented AI-for-Business-Leaders course).
 
 ## Current status
 
-Built this session from the client's `.docx` outline and structured like AI-for-business-
-leaders: `outline.md`, five slide decks (`slides/00-about` + one per session, build via
-`gen.sh`), four chained labs + `SETUP.md`, and a shared seeded dataset. All five decks build
-cleanly. Teaching from the Mac.
+Course is written, verified, and **re-skinned to the client's domain: cane-sugar imports into
+Angola**. The fictional dataset is now **Kwanza Sugar Imports** (Port × Grade × Month, Tonnes +
+Value USD) in place of the generic Cascade Outdoor Supply. Dataset regenerated and dry-run
+verified; all four labs, the facilitator index, and the slide *sources* re-skinned to match.
+Slide decks (.pptx) still need to be rebuilt on the Mac from the updated sources (`gen.sh`).
 
-## Recent accomplishments
+## Recent accomplishments (2026-09-23 session)
 
-- Full course authored: outline, 5 decks, 4 labs, lab setup, facilitator index, prompt-
-  library handout, seeded sample dataset.
-- Tooling decision made and documented (see below).
-- Decks verified to assemble via `gen.sh`.
+- **Dry-run of the dataset** — verified every planted lesson and the analytical narrative by
+  direct calculation (see "Dataset's built-in lessons" below). All present and crisp.
+- **Domain re-skin** — regenerated the dataset as fictional Angola cane-sugar imports and
+  edited labs 1–4, `SETUP.md`, `labs/README.md`, top-level `README.md`, `outline.md`, and all
+  slide sources to the new domain, holding to the verified numbers.
+- **Student intro form added** — adapted the AI-for-Business-Leaders "fill → copy → paste"
+  HTML form as `course-materials/cohort-intros.html`; Claude-first, and it now asks each
+  student which Claude account they have, so the returned cards double as an account census.
+- **Free-survival path added** to `SETUP.md` (single long chat instead of Projects; usage-cap
+  guidance; instructor-demo fallback), for the likely case that students arrive on Free.
 
 ## Current priorities
 
-1. Instructor dry-run of the four labs on a real Claude.ai account before Thursday.
-2. Confirm participant accounts (Team seats ideal — see decision).
-3. Share `cascade-sales.csv` and the prompt-library handout with participants.
+1. **Rebuild the five decks on the Mac** from the updated slide sources (`cd slides && ./gen.sh`)
+   and commit the built decks to the release directory.
+2. **Send the intro form to students today** so account/skill info comes back before class.
+3. **Live behavioral dry-run on Claude.ai** — the one thing still untested: does Claude invoke
+   the Analysis tool and catch the 2025-06 Luanda/Brown outlier? Data is verified; live tool
+   behavior is not.
 
 ## Customers and revenue connections
 
-Client TBD/kept out of repo. Delivery **2026-09-24**. Content can be tailored to a client
-domain (finance/ops/sales) on request.
+Client is a **cane-sugar import business in Angola** (specifics kept out of repo). Delivery
+**2026-09-24**. Course content is now tailored to their domain.
 
-## Tooling decision
+## Account plan for participants (decision — partially resolved)
 
-**Claude.ai, plan = Claude Team ("Claude for Work"); Pro is an individual fallback.** Not the
-API/keys. Rationale: the course is built on Projects, file upload, Artifacts, and the Analysis
-tool — all Claude.ai features the API/Console lacks. Instructor originally considered API keys;
-recommendation is to use Claude for Work instead. Documented in `outline.md` and `labs/SETUP.md`.
+15 students, otherwise unknown. Mark is **emailing the client now** to request accounts,
+hoping for a reply before class but assuming he may not get one. **Fallback plan (set):** rely
+on the client's environment if provided → instructor demos on Mark's own account → students on
+Free follow along using the Free-survival path. Recommended remains **Claude Team ("for Work")**
+if the client can provision. **Open:** client's answer on who provisions.
+
+## Dataset's built-in lessons (verified 2026-09-23)
+
+`course-materials/sample-data/angola-sugar-imports.csv` — 384 rows, 24 months (2024–2025),
+Port × Grade. Confirmed by calculation:
+
+- **Namibe** — only declining port (~−13% YoY); also carries the label mess, so sloppy merging
+  hides the decline.
+- **Specialty** — fastest-growing grade (~+22%). **Refined** — autumn spike (Sep–Nov).
+- **Port label mess** — Namibe appears as `Namibe`/`namibe`/`NAMIBE`/`NMB` (Lab 2 Step 2).
+- **5 blank Value cells** (Lab 2 Step 2).
+- **Planted outlier** — 2025-06, Luanda, Brown ≈ $655K vs a ~$66K norm (~10×). Uncorrected it
+  makes Luanda look like a ~20% grower; corrected, Luanda is ~flat. Strong Step-4 payoff.
 
 ## Upcoming deadlines
 
@@ -50,27 +76,29 @@ recommendation is to use Claude for Work instead. Documented in `outline.md` and
 
 ## Important TODOs
 
-- Dry-run Lab 2's analysis-tool + outlier-catch flow on the live dataset (confirm Claude finds
-  the June-2025 West/Equipment 10x error when asked).
+- Rebuild + commit decks on the Mac from updated sources.
+- Distribute `cohort-intros.html` to students today.
+- Live dry-run of Lab 2's Analysis-tool + outlier-catch flow on a real Claude.ai account.
 - Confirm PowerPoint/Google Slides paste path in Lab 4 on the Mac.
 
 ## Blockers and dependencies
 
-- Participant Claude accounts (Team seats) provisioned before Thursday.
+- Participant Claude accounts unconfirmed. Mitigated (not removed) by the Free-survival path
+  and instructor-demo fallback; awaiting client reply.
 
 ## Risks
 
-- **Account readiness** — if only Free accounts are available, Projects/limits degrade the
-  labs; if only API keys, the labs don't work as written (flagged in SETUP).
-- **Analysis-tool behavior** — labs assume Claude uses the analysis tool when asked; verify in
-  the dry run.
+- **Account readiness** — mitigated by the Free path + demo mode, but a Free-only room is a
+  degraded experience.
+- **Analysis-tool behavior** — labs assume Claude uses the Analysis tool when asked; verified
+  in the data but not yet in a live session.
 
 ## Decisions needed from Mark
 
-- Final account plan for participants (Team vs. Pro) and who provisions.
+- Whether to wait on the client's account answer or commit to the Free/demo plan for tomorrow.
 
 ## Next three highest-value actions
 
-1. Dry-run all four labs end to end on Claude.ai (esp. Lab 2 outlier catch, Lab 4 export).
-2. Confirm and provision participant accounts.
-3. Distribute the dataset + prompt-library handout and the SETUP data-safety rules.
+1. Rebuild decks on the Mac and commit them.
+2. Send the intro form to students now.
+3. Live dry-run of Lab 2 (Analysis tool + Luanda/Brown outlier catch) and the Lab 4 export path.

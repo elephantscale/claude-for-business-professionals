@@ -1,8 +1,9 @@
 # Labs — Facilitator Index
 
 Four labs, one per session. Every participant works on the **same fictional dataset**
-(Cascade Outdoor Supply) inside **one Claude Project**, so the labs chain: analysis →
-report → deck. Read `SETUP.md` first — it covers accounts and the data-safety rule.
+(Kwanza Sugar Imports — a cane-sugar importer/distributor in Angola) inside **one Claude
+Project**, so the labs chain: analysis → report → deck. Read `SETUP.md` first — it covers
+accounts and the data-safety rule.
 
 ## At a glance
 
@@ -17,21 +18,24 @@ report → deck. Read `SETUP.md` first — it covers accounts and the data-safet
 
 All in `course-materials/`:
 
-- `sample-data/cascade-sales.csv` — the shared dataset (24 months, seeded with a real story
-  and a few deliberate data-quality problems).
+- `sample-data/angola-sugar-imports.csv` — the shared dataset (24 months, seeded with a real
+  story and a few deliberate data-quality problems).
 - `prompt-library-template.md` — the handout participants fill in during Lab 4.
 
 ## The dataset's built-in lessons (instructor cheat sheet)
 
 The data is realistic on purpose — the "wrong" bits are teaching devices:
 
-- **East region is declining** while the others grow — the headline finding.
-- **Accessories is the fastest-growing category**; **Footwear spikes in autumn** (Sep–Nov).
-- **Inconsistent Region labels** — "East" appears as `East`, `east`, `EAST`, `E` — the
-  cleaning exercise (Lab 2, Step 2).
-- **Five blank Revenue cells** — the "don't silently invent values" exercise.
-- **One planted outlier: June 2025, West, Equipment** is ~10× too large — the sanity-check
-  catch (Lab 2, Step 4). It inflates West and the company total until corrected.
+- **Namibe is the only declining port** (~−13% year over year) while the others grow — the
+  headline finding.
+- **Specialty is the fastest-growing grade** (~+22%); **Refined spikes in autumn** (Sep–Nov,
+  pre-holiday stockpiling).
+- **Inconsistent Port labels** — "Namibe" appears as `Namibe`, `namibe`, `NAMIBE`, `NMB` — the
+  cleaning exercise (Lab 2, Step 2). It's the *declining* port, so sloppy merging hides the decline.
+- **Five blank Value cells** — the "don't silently invent values" exercise.
+- **One planted outlier: 2025-06, Luanda, Brown** is ~10× too large (~$655K vs a ~$66K norm) —
+  the sanity-check catch (Lab 2, Step 4). Uncorrected it makes Luanda look like a ~20% grower;
+  corrected, Luanda's growth is basically flat. The whole Luanda headline is one typo.
 
 ## Facilitator notes that apply throughout
 
