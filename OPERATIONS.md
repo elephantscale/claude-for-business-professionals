@@ -34,15 +34,20 @@ Slide decks (.pptx) still need to be rebuilt on the Mac from the updated sources
   student which Claude account they have, so the returned cards double as an account census.
 - **Free-survival path added** to `SETUP.md` (single long chat instead of Projects; usage-cap
   guidance; instructor-demo fallback), for the likely case that students arrive on Free.
+- **Facilitator answer key** (`labs/ANSWER-KEY.md`) with the exact verified figures, to
+  validate students' analysis live.
+- **Decks rebuilt on the Mac** from the re-skinned sources and committed to `slides/release/`;
+  verified to contain the new sugar domain and no old-domain references.
 
 ## Current priorities
 
-1. **Rebuild the five decks on the Mac** from the updated slide sources (`cd slides && ./gen.sh`)
-   and commit the built decks to the release directory.
-2. **Send the intro form to students today** so account/skill info comes back before class.
-3. **Live behavioral dry-run on Claude.ai** — the one thing still untested: does Claude invoke
+1. **Send the intro form to students today** so account/skill info comes back before class.
+2. **Live behavioral dry-run on Claude.ai** — the one thing still untested: does Claude invoke
    the Analysis tool and catch the 2025-06 Luanda/Brown outlier? Data is verified; live tool
    behavior is not.
+3. **Confirm client's account answer** (Team seats vs. Free/demo fallback).
+
+*(Decks are built and committed to `slides/release/` — verified to use the new sugar domain.)*
 
 ## Customers and revenue connections
 
@@ -76,7 +81,6 @@ Port × Grade. Confirmed by calculation:
 
 ## Important TODOs
 
-- Rebuild + commit decks on the Mac from updated sources.
 - Distribute `cohort-intros.html` to students today.
 - Live dry-run of Lab 2's Analysis-tool + outlier-catch flow on a real Claude.ai account.
 - Confirm PowerPoint/Google Slides paste path in Lab 4 on the Mac.
