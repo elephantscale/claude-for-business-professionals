@@ -1,10 +1,10 @@
 # Project Operations
 
-**Last updated:** 2026-09-23
+**Last updated:** 2026-09-24
 **Owner:** Mark Kerzner (instructor)
-**Status:** Yellow — course fully built and re-skinned to the client domain; first delivery
-Thursday 2026-09-24. Yellow (not Green) only because participant Claude account provisioning is
-unconfirmed the day before.
+**Status:** Green — **Session 1 delivered 2026-09-24.** Room confirmed on Claude Pro (labs run
+at full power). Sessions 2–4 remaining. One process fix in flight: student intake is moving from
+the copy-paste HTML card to a Google Form.
 
 ## Purpose and business value
 
@@ -16,11 +16,13 @@ ChatGPT/Azure-oriented AI-for-Business-Leaders course).
 
 ## Current status
 
-Course is written, verified, and **re-skinned to the client's domain: cane-sugar imports into
-Angola**. The fictional dataset is now **Kwanza Sugar Imports** (Port × Grade × Month, Tonnes +
-Value USD) in place of the generic Cascade Outdoor Supply. Dataset regenerated and dry-run
-verified; all four labs, the facilitator index, and the slide *sources* re-skinned to match.
-Slide decks (.pptx) still need to be rebuilt on the Mac from the updated sources (`gen.sh`).
+**Session 1 delivered 2026-09-24.** Course is built, verified, and re-skinned to the client's
+domain (cane-sugar imports into Angola; dataset = **Kwanza Sugar Imports**, Port × Grade × Month,
+Tonnes + Value USD). Decks built and in `slides/release/`. Students are on **Claude Pro** (and
+also use Gemini/ChatGPT) — accounts are a non-issue and the labs run at full power. Sessions 2–4
+remain. The one issue surfaced in Session 1: the intro form's copy-paste-into-chat card is
+unreliable for actually collecting student info, so intake is switching to a **Google Form**
+(responses to a Sheet Mark owns).
 
 ## Recent accomplishments (2026-09-23 session)
 
@@ -39,28 +41,37 @@ Slide decks (.pptx) still need to be rebuilt on the Mac from the updated sources
 - **Decks rebuilt on the Mac** from the re-skinned sources and committed to `slides/release/`;
   verified to contain the new sugar domain and no old-domain references.
 
+### 2026-09-24
+
+- **Session 1 delivered.** Room on Claude Pro (+ Gemini/ChatGPT). Lab 1 (naive vs. engineered
+  prompt) run live.
+- **GitHub Pages published** — landing at `elephantscale.github.io/claude-for-business-professionals/`
+  and the intro form at `/course-materials/cohort-intros.html` (public, opens from any device).
+  Note: the root `index.html` landing page is written locally but not yet committed/pushed
+  (blocked from the assistant as a public-surface action; Mark to push if wanted). The form URL
+  works regardless.
+- **Intake fix decided** — switching from the copy-paste card to a **Google Form** (responses →
+  Google Sheet). Field spec matches `cohort-intros.html`, including the Claude-account question.
+
 ## Current priorities
 
-1. **Send the intro form to students today** so account/skill info comes back before class.
-2. **Live behavioral dry-run on Claude.ai** — the one thing still untested: does Claude invoke
-   the Analysis tool and catch the 2025-06 Luanda/Brown outlier? Data is verified; live tool
-   behavior is not.
-3. **Confirm client's account answer** (Team seats vs. Free/demo fallback).
-
-*(Decks are built and committed to `slides/release/` — verified to use the new sugar domain.)*
+1. **Deliver Sessions 2–4.** Session 2 (data analysis + the Luanda/Brown outlier catch) is the
+   most-verified lab — dataset confirmed, Analysis-tool behavior proven in rehearsal, answer key
+   in hand (`labs/ANSWER-KEY.md`).
+2. **Stand up the Google Form** for student intake (replaces the copy-paste card) and reuse it
+   for the next cohort.
+3. **Optional:** commit/push the root `index.html` landing page for a tidier Pages URL.
 
 ## Customers and revenue connections
 
 Client is a **cane-sugar import business in Angola** (specifics kept out of repo). Delivery
 **2026-09-24**. Course content is now tailored to their domain.
 
-## Account plan for participants (decision — partially resolved)
+## Account plan for participants (resolved)
 
-15 students, otherwise unknown. Mark is **emailing the client now** to request accounts,
-hoping for a reply before class but assuming he may not get one. **Fallback plan (set):** rely
-on the client's environment if provided → instructor demos on Mark's own account → students on
-Free follow along using the Free-survival path. Recommended remains **Claude Team ("for Work")**
-if the client can provision. **Open:** client's answer on who provisions.
+Students are on **Claude Pro** (and also use Gemini/ChatGPT). Pro runs every lab at full power
+(Projects + Analysis tool), so the Free-survival path in `SETUP.md` stays as a documented
+fallback but wasn't needed. No provisioning dependency on the client.
 
 ## Dataset's built-in lessons (verified 2026-09-23)
 
@@ -77,32 +88,32 @@ Port × Grade. Confirmed by calculation:
 
 ## Upcoming deadlines
 
-- **2026-09-24** — first delivery (Thursday).
+- **2026-09-24** — Session 1 delivered. ✅
+- Sessions 2–4 — dates per the client's schedule (`Unknown` in repo).
 
 ## Important TODOs
 
-- Distribute `cohort-intros.html` to students today.
-- Live dry-run of Lab 2's Analysis-tool + outlier-catch flow on a real Claude.ai account.
-- Confirm PowerPoint/Google Slides paste path in Lab 4 on the Mac.
+- Build the Google Form for intake (field spec in chat / matches `cohort-intros.html`); link it
+  to a Google Sheet and turn on new-response email notifications.
+- Confirm PowerPoint/Google Slides paste path in Lab 4 on the Mac (still to exercise live).
+- Optional: commit/push `index.html` for the Pages landing page.
 
 ## Blockers and dependencies
 
-- Participant Claude accounts unconfirmed. Mitigated (not removed) by the Free-survival path
-  and instructor-demo fallback; awaiting client reply.
+- None open. Accounts resolved (Pro); decks built; content verified.
 
 ## Risks
 
-- **Account readiness** — mitigated by the Free path + demo mode, but a Free-only room is a
-  degraded experience.
-- **Analysis-tool behavior** — labs assume Claude uses the Analysis tool when asked; verified
-  in the data but not yet in a live session.
+- **Lab 4 export path** — the PowerPoint/Google Slides paste step hasn't been exercised live yet.
+- **Intake reliability** — copy-paste card proved unreliable; the Google Form removes this risk
+  once stood up.
 
 ## Decisions needed from Mark
 
-- Whether to wait on the client's account answer or commit to the Free/demo plan for tomorrow.
+- None outstanding.
 
 ## Next three highest-value actions
 
-1. Rebuild decks on the Mac and commit them.
-2. Send the intro form to students now.
-3. Live dry-run of Lab 2 (Analysis tool + Luanda/Brown outlier catch) and the Lab 4 export path.
+1. Deliver Session 2 using the answer key to validate the room's outlier catch.
+2. Stand up the Google Form for intake.
+3. Exercise the Lab 4 export path once before Session 4.
