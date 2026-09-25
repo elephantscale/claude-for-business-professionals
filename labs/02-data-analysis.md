@@ -115,9 +115,45 @@ catch. Keep them in the Project; Session 3 turns them into a report.
   the trap. Confidence is not accuracy.
 - Someone whose chart looks wrong because the blanks/outlier weren't handled. Good — that's
   why cleaning came first. Have them redo it.
+- **Fast finishers / stronger participants** — point them to "Going deeper" so the room stays
+  engaged while others complete the core five steps. Challenge B (red-teaming the outlier fix)
+  stretches confident students the most.
 
-## If you finish early
+## Going deeper — for advanced participants (if you finish early)
 
-Ask: *"If I could give Namibe one intervention next quarter, what does the data suggest and
-what's the risk in that recommendation?"* Notice Claude will now reason **beyond** the data —
-a good moment to practice separating what the numbers say from what the AI is inferring.
+The five steps above are the whole lab — **everyone does those.** If you finish with time to
+spare, here are three that separate a competent analyst from a sharp one. Same dataset, same
+Project.
+
+**A. Drill into the decline — is Namibe broad or concentrated?**
+
+> ```
+> Namibe is our one declining port. Break its decline down: which grades are falling and
+> which (if any) are holding? Is the drop steady across the 24 months, or does it start at
+> a particular point? Give me the one chart that best shows where Namibe is actually losing
+> ground, and tell me what you'd check next.
+> ```
+
+"Namibe is down 13%" is where amateurs stop. The decision depends on *what's* down — one
+grade collapsing is a different problem from broad erosion.
+
+**B. Red-team your own correction.**
+
+> ```
+> I assumed the June-2025 Luanda Brown figure was a data-entry error and corrected it.
+> Argue the other side: what would have to be true for that number to be real, and exactly
+> what would I check before I change it? What's the risk if I'm wrong?
+> ```
+
+Advanced users don't just *catch* outliers — they resist "cleaning" a number that might be a
+real signal (a bulk shipment, a price spike). Verify before you overwrite.
+
+**C. Separate the data from the inference.**
+
+> ```
+> If I could give Namibe one intervention next quarter, what does the data suggest and what's
+> the risk in that recommendation?
+> ```
+
+Claude will now reason **beyond** the data — a good moment to practice separating what the
+numbers say from what the AI is inferring.
