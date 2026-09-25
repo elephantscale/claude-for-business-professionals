@@ -9,6 +9,22 @@ a student skipped the cleanup or the outlier fix.
 > should land within rounding of the "corrected" figures. A student who did neither will see the
 > "raw" figures — that gap *is* the lesson.
 
+> **Expect method-dependent percentages — validate the direction, not the decimal.** The exact
+> growth figures below shift depending on how Claude handles the 5 blank cells: a simple exclude
+> (used for the tables here) vs. a stricter **like-for-like** match (comparing only
+> port/grade/month cells present in *both* years). Both are legitimate, so a room's numbers won't
+> match to the decimal — and that's fine. The **stable anchor is Namibe −12.5%** (no blanks, no
+> outlier, so every method agrees). Specialty may land anywhere from **~+18% to +22%** — still
+> clearly the fastest grower. A like-for-like run typically reports roughly **Luanda +6%,
+> Lobito +8%, Cabinda +11%, Specialty +18%, Refined +3%** — same story, different method. Judge
+> students on whether they got the *finding* (Namibe down, Specialty fastest, autumn peak),
+> not the number.
+
+> **Seasonality is really a Refined story.** The Sep–Nov peak shows up in the *aggregate*, but
+> the bump is concentrated in **Refined** — Raw/Brown/Specialty are essentially flat
+> month-to-month. Claude may describe the peak as broad; a student who drills into grades will
+> find Refined carries it. (This is exactly what the "Going deeper" drill-down surfaces.)
+
 ## Shape
 
 - 384 rows · 24 months (2024-01 → 2025-12) · 4 ports × 4 grades.
